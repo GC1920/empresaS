@@ -23,32 +23,24 @@
             <h1>Login EmpresaS</h1>
             <div class="user">
                 <em class="fas fa-user"></em>
-                <input 
+                <p>Usuário: <input 
                 type="text" 
                 name="username" 
-                id="username" 
-                placeholder="Nome Completo"
-                />
-                <em class="fas fa-envelope"></em>
-                <input 
-                type="text" 
-                name="username" 
-                id="username" 
-                placeholder="Endereço de E-mail"
-                />
+                id="username"
+                pattern="[a-z A-Z]" 
+                /></p>
                 <em class="fas fa-unlock-alt"></em>
-                <input 
+                <p>Senha: <input 
                 type="password" 
                 name="password" 
                 id="password" 
-                placeholder="Senha"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 required
-                />
+                /></p>
             </div>
 
             <div class="login-btn">
-                <button class="btn">Enviar</button>
+                <button class="btn">Entrar</button>
             </div>
 
             <div id="message">
@@ -57,11 +49,12 @@
                 <p id="letter" class="invalid">Pelo menos uma letra <b>minúscula</b></p>
                 <p id="capital" class="invalid">Pelo menos uma letra <b>maiúscula</b></p>
                 <p id="number" class="invalid">Pelo menos um <b>número</b></p>
-                <p id="length" class="invalid">No mínimo <b>8 caracteres</b></p>
+                <p id="length" class="invalid">No mínimo <b>6 caracteres</b></p>
                 </div>
             </div>
 
             <script>
+                var inputUser =  document.getElementById("username")
                 var myInput = document.getElementById("password");
                 var letter = document.getElementById("letter");
                 var capital = document.getElementById("capital");
@@ -111,7 +104,7 @@
                   }
                   
                   // Validate length
-                  if(myInput.value.length >= 8) {
+                  if(myInput.value.length >= 6) {
                     length.classList.remove("invalid");
                     length.classList.add("valid");
                   } else {
