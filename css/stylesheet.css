@@ -11,8 +11,7 @@ body {
 
 h1 {
     font-weight: 900;
-    font-size: 50px;
-    text-align: center;
+    padding-left: 40px;
 }
 
 .container {
@@ -80,10 +79,6 @@ input:focus {
     opacity: 1;
 }
 
-.cadastro {
-    text-align: center;
-}
-
 .signup span {
     color: #7fb8e6;
 }
@@ -135,3 +130,18 @@ input:focus {
     left: -10px;
     content: "x";
   }
+  #gerenciar-funcionario{
+
+    background-color: #5C5C5C5C;
+  }
+  #gerenciar-funcionario h1{
+    margin-bottom: 50px;
+  }
+  #gerenciar-funcionario input{
+    margin-bottom: 20px;
+  }
+  #gerenciar-funcionario button{
+    padding: 10px;
+    font-size: 17px;
+  }
+ 
