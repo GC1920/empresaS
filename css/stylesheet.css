@@ -11,7 +11,8 @@ body {
 
 h1 {
     font-weight: 900;
-    padding-left: 40px;
+    font-size: 50px;
+    text-align: center;
 }
 
 .container {
@@ -77,6 +78,10 @@ input:focus {
 
 .btn:hover {
     opacity: 1;
+}
+
+.cadastro {
+    text-align: center;
 }
 
 .signup span {
